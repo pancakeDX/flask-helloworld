@@ -12,6 +12,8 @@ def index():
 def standard():
     """
     Standard Weight
+
+    Calculate for Standard Weight
     """
     height = int(request.form.get('height'))
     weight = int(request.form.get('weight'))
