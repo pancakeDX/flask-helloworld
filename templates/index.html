@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/standard/" method="post">
+        身高：<input type="text" name="height" id="" value="{{ height }}"> 公分<br />
+        體重：<input type="text" name="weight" id="" value="{{ weight }}"> 公斤<br />
+        <input type="submit" value="計算">
+    </form>
+    {% if comment %}
+    <br />
+    你的體重是 {{ comment }} 的啦！
+    {% endif %}
+</body>
+</html>
