@@ -3,10 +3,16 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    """
+    Index Page
+    """
     return render_template('index.html')
 
 @app.route("/standard/", methods=['POST'])
 def standard():
+    """
+    Standard Weight
+    """
     height = int(request.form.get('height'))
     weight = int(request.form.get('weight'))
     std_h_w = height - 105
