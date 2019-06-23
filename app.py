@@ -10,6 +10,8 @@ def standard():
     height = int(request.form.get('height'))
     weight = int(request.form.get('weight'))
     std_h_w = height - 105
+    # Add Debug Message
+    print(std_h_w)
     if std_h_w >= 40:
         comment = "重度肥胖"
     elif std_h_w >= 35 and std_h_w < 40:
